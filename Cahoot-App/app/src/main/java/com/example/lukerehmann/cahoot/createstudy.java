@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-
+// Joyce Sakata
 
 public class createstudy extends Activity {
 

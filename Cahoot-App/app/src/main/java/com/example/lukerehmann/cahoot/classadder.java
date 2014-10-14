@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+// Mingjue Ni - Class Addition Page (select your classes)
 
 
 public class classadder extends Activity {
