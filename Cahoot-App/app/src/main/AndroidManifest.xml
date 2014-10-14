@@ -16,6 +16,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".university"
+            android:label="@string/title_activity_university" >
+        </activity>
+        <activity
+            android:name=".classadder"
+            android:label="@string/title_activity_classadder" >
+        </activity>
+        <activity
+            android:name=".classlist"
+            android:label="@string/title_activity_classlist" >
+        </activity>
+        <activity
+            android:name=".studydetail"
+            android:label="@string/title_activity_studydetail" >
+        </activity>
+        <activity
+            android:name=".classstudies"
+            android:label="@string/title_activity_classstudies" >
+        </activity>
+        <activity
+            android:name=".createstudy"
+            android:label="@string/title_activity_createstudy" >
+        </activity>
+        <activity
+            android:name=".studycreatesuccess"
+            android:label="@string/title_activity_studycreatesuccess" >
+        </activity>
     </application>
 
 </manifest>
