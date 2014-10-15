@@ -10,7 +10,6 @@
     tools:context="com.example.lukerehmann.cahoot.studydetail$PlaceholderFragment">
 
 
-
     <TextView
         android:id="@+id/top"
         android:text="Study Group Details for: \n\t\t\t[STUDY GROUP NAME]\n"
@@ -20,7 +19,7 @@
         android:layout_height="150px" />
 
     <TextView
-        android:id="@+id/class"
+        android:id="@+id/classname"
         android:textSize="20sp"
 
         android:text="Class: [CLASS NAME]"
@@ -35,20 +34,18 @@
         android:text="Location:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/class"
+        android:layout_below="@+id/classname"
         android:textSize="16sp"
 
         />
 
-    <!-- Need Google Maps API Key in AndroidManifest.xml -->
-    <fragment
-        android:id="@+id/map"
 
-        class="com.google.android.gms.maps.MapFragment"
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="200px"
         android:layout_below="@+id/location"
-        />
+        android:name="com.google.android.gms.maps.MapFragment"/>
     <!-- onclick, enlarge the size of the map -->
 
 
@@ -75,14 +72,15 @@
         android:layout_below="@+id/time"
         />
 
-<Button
-    android:id="@+id/attend"
-    android:text="Check in to this Study"
-    android:layout_width="wrap_content"
-    android:layout_height="150px"
-    android:layout_below="@+id/comments"
+    <Button
+        android:id="@+id/attend"
+        android:text="Check in to this Study"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_below="@+id/comments"
 
-    />
-<!-- onclick, call checkin() -->
+        />
+    <!-- onclick, call checkin() -->
+
 
 </RelativeLayout>

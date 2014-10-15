@@ -11,5 +11,6 @@
     <string name="title_activity_classstudies">classstudies</string>
     <string name="title_activity_createstudy">createstudy</string>
     <string name="title_activity_studycreatesuccess">studycreatesuccess</string>
+    <string name="title_activity_university">university</string>
 
 </resources>
