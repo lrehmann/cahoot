@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cahoot.iml" filepath="$PROJECT_DIR$/Cahoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cahoot-App.iml" filepath="$PROJECT_DIR$/Cahoot-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

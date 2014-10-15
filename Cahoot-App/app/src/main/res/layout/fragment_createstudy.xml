@@ -9,9 +9,60 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.lukerehmann.cahoot.createstudy$PlaceholderFragment">
 
+    <!--Add a class-->
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add a Class"
+        android:id="@+id/addaclassheader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--Drop-down list of all user's classes-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--Add study location-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add a Location"
+        android:id="@+id/addalocationheader"
+        android:layout_below="@+id/addaclassheader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <!--Get GPS-->
+
+
+
+    <!--Add a description of topic of study and location-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/descriptionMultiLine"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <!--Create Study Button-->
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="createStudy"
+    android:id="@+id/createStudyButton"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="41dp" />
+
 
 </RelativeLayout>

@@ -60,5 +60,21 @@ public class createstudy extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_createstudy, container, false);
             return rootView;
         }
+
+    //Get GPS Location
+    /* public void getgps (){
+        get the gps location & autofill the "location"
+        text edit with coordinates
+    }
+     */
+
+    //Create Study Group
+    /* public void create_study{
+        Send the study info to the server
+        Send the user to the study list activity
+    }
+    */
+
+
     }
 }
