@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add a Class"
+        android:text="Select Class"
         android:id="@+id/addaclassheader"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -24,20 +24,23 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/yourClass"
+        android:spinnerMode="dropdown"
+        android:layout_toEndOf="@+id/descriptionMultiLine"
+        android:layout_below="@+id/addaclassheader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <!--Add study location-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add a Location"
+        android:text="Location"
         android:id="@+id/addalocationheader"
-        android:layout_below="@+id/addaclassheader"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp" />
+        android:layout_below="@+id/yourClass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <!--Get GPS-->
 
@@ -50,8 +53,10 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/descriptionMultiLine"
+        android:text="Enter Description"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
     <!--Create Study Button-->
@@ -63,6 +68,29 @@
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
     android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/descriptionHeader"
+        android:layout_toEndOf="@+id/addalocationheader"
+        android:layout_above="@+id/descriptionMultiLine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addALocation"
+        android:layout_alignParentStart="true"
+        android:autoText="false"
+        android:clickable="false"
+        android:layout_alignParentEnd="true"
+        android:text="Enter Location"
+        android:layout_below="@+id/addalocationheader"
+        android:layout_alignParentLeft="true" />
 
 
 </RelativeLayout>
