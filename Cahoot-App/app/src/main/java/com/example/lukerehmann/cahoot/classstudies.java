@@ -13,6 +13,27 @@ import android.os.Build;
 
 // Luke Rehmann
 
+/*
+
+
+public void loadclasses(View view){
+
+    // load up the clickable xml button for each class the user is a part of
+
+
+}
+
+public void loadclass(View view,classid){
+
+    Intent intent = new intent(this, studydetails.class);
+    startActivity(intent,classid);
+
+}
+
+
+ */
+
+
 
 public class classstudies extends Activity {
 
