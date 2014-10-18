@@ -30,6 +30,13 @@ import android.view.ViewGroup;
 
 public class createstudy extends Activity {
 
+    public void MakeStudy(View view) {
+
+        Intent intent = new Intent(this, studycreatesuccess.class);
+        startActivity(intent);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

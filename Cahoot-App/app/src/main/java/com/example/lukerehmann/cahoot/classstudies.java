@@ -3,6 +3,7 @@ package com.example.lukerehmann.cahoot;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -36,6 +37,13 @@ public void loadclass(View view,classid){
 
 
 public class classstudies extends Activity {
+
+    public void StudyDetails(View view) {
+
+        Intent intent = new Intent(this, studydetail.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

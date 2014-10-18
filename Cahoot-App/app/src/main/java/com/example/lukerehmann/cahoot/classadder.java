@@ -3,6 +3,7 @@ package com.example.lukerehmann.cahoot;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,6 +16,13 @@ import android.os.Build;
 
 
 public class classadder extends Activity {
+
+
+    public void AddClasses(View view) {
+
+        Intent intent = new Intent(this, classlist.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
