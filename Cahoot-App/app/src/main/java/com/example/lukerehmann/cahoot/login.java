@@ -10,7 +10,9 @@ import android.view.View;
 public class login extends Activity {
 
     public void LoginCahoot(View view) {
+
         Intent intent = new Intent(this, university.class);
+        startActivity(intent);
     }
 
     @Override
