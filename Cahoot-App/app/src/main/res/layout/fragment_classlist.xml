@@ -11,7 +11,7 @@
     tools:context="com.example.lukerehmann.cahoot.classlist$PlaceholderFragment">
 
     <TextView
-<<<<<<< HEAD
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -19,15 +19,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-=======
+    <TextView
         android:id="@+id/top"
         android:text="[UNIVERSITY NAME]\n"
         android:layout_width="wrap_content"
         android:textSize="30sp"
         android:onClick="SelectClass"
         android:layout_height="150px" />
->>>>>>> FETCH_HEAD
-
 
     <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
     <Button
