@@ -19,7 +19,7 @@
 
 
     <Button
-        android:id="@+id/class1"
+        android:id="@+id/addclass"
         android:text="--Create A Study Group--"
         android:layout_width="fill_parent"
         android:layout_height="150px"
@@ -37,7 +37,7 @@
         android:layout_height="150px"
         android:textSize="30sp"
         android:onClick="StudyDetails"
-        android:layout_below="@+id/class1"
+        android:layout_below="@+id/addclass"
 
         />
 
