@@ -1,15 +1,14 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
 // Joyce Sakata
 
@@ -79,6 +78,11 @@ public class createstudy extends Activity {
         }
 
 
+    }
+    public void CreateAStudyGroup(View view){
+       //Add button code
+        Intent intent = new Intent(this, studycreatesuccess.class);
+        startActivity(intent);
 
     }
 }
