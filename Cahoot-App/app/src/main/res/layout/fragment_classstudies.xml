@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/top"
-        android:text="Class Name\n"
+        android:text="SI 543 Study Groups\n"
         android:layout_width="wrap_content"
         android:textSize="30sp"
         android:layout_height="150px" />
@@ -21,7 +21,7 @@
     <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
     <Button
         android:id="@+id/class1"
-        android:text="SI 543"
+        android:text="Stats at Starbucks"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
@@ -32,7 +32,7 @@
 
     <Button
         android:id="@+id/class2"
-        android:text="SI 001"
+        android:text="Learning Chapter 3"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
@@ -42,7 +42,7 @@
         />
     <Button
         android:id="@+id/class3"
-        android:text="SI 002"
+        android:text="Small Study Group"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
