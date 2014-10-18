@@ -68,30 +68,10 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyB0FBzk6jOdDYw1caU09jNNlYrzuvFIWEc" />
 
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:windowSoftInputMode="adjustResize|stateHidden" >
-        </activity>
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".login"
-            android:label="@string/title_activity_login" >
-        </activity>
     </application>
 
     <!--

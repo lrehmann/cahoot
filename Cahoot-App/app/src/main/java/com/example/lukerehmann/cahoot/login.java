@@ -4,9 +4,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.content.Intent;
+import android.view.View;
 
 public class login extends Activity {
+
+    public void LoginCahoot(View view) {
+        Intent intent = new Intent(this, university.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
