@@ -11,8 +11,45 @@
     tools:context="com.example.lukerehmann.cahoot.classlist$PlaceholderFragment">
 
     <TextView
-        android:text="@string/hello_world"
+        android:id="@+id/top"
+        android:text="[UNIVERSITY NAME]\n"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textSize="30sp"
+        android:onClick="SelectClass"
+        android:layout_height="150px" />
 
+
+    <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
+    <Button
+        android:id="@+id/class1"
+        android:text="SI 543"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+        android:onClick="SelectClass"
+        android:layout_below="@+id/top"
+
+        />
+
+    <Button
+        android:id="@+id/class2"
+        android:text="SI 001"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+        android:onClick="SelectClass"
+        android:layout_below="@+id/class1"
+
+        />
+    <Button
+        android:id="@+id/class3"
+        android:text="SI 002"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+
+        android:layout_below="@+id/class2"
+        android:onClick="SelectClass"
+
+        />
 </RelativeLayout>
