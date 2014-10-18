@@ -20,7 +20,7 @@
         <EditText
             android:layout_width="@dimen/abc_panel_menu_list_width"
             android:layout_height="wrap_content"
-            android:id="@+id/editText2"
+            android:id="@+id/enterDescription"
             android:layout_below="@+id/ClassSelect"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:text="Next"
             android:id="@+id/goToClassList"
-            android:layout_below="@+id/editText2"
+            android:layout_below="@+id/enterDescription"
 
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
