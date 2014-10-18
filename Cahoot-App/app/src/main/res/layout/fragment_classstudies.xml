@@ -37,7 +37,7 @@
         android:layout_height="150px"
         android:textSize="30sp"
         android:onClick="StudyDetails"
-        android:layout_below="@+id/top"
+        android:layout_below="@+id/class1"
 
         />
 
