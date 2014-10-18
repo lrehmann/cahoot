@@ -27,9 +27,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Location"
         android:id="@+id/addalocationheader"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/addALocation"
-        android:layout_alignParentLeft="true" />
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/addaclassheader"
+        android:layout_alignLeft="@+id/addaclassheader" />
 
     <!--Get GPS-->
 
@@ -37,27 +37,27 @@
 
     <!--Add a description of topic of study and location-->
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/descriptionMultiLine"
         android:text="Enter Description"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descriptionHeader"
+        android:layout_alignLeft="@+id/addaclassheader" />
 
 
     <!--Create Study Button-->
     <Button
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Create a Study Group"
     android:id="@+id/createStudyButton"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="41dp"
-    android:onClick="CreateAStudyGroup"/>
+        android:onClick="CreateAStudyGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/descriptionMultiLine"
+        android:layout_alignStart="@+id/descriptionMultiLine" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,9 +66,9 @@
         android:text="Description"
         android:id="@+id/descriptionHeader"
         android:layout_toEndOf="@+id/addalocationheader"
-        android:layout_above="@+id/descriptionMultiLine"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addALocation"
+        android:layout_alignLeft="@+id/addaclassheader" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -78,10 +78,9 @@
         android:autoText="false"
         android:clickable="false"
         android:text="Enter Location"
-        android:layout_above="@+id/descriptionHeader"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addalocationheader"
+        android:layout_alignLeft="@+id/addaclassheader" />
 
 
 </RelativeLayout>
