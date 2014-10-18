@@ -73,9 +73,9 @@
 
     <Button
         android:id="@+id/attend"
-        android:text="Check in to this Study"
-        android:layout_width="wrap_content"
-        android:layout_height="150px"
+        android:text="Check in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_below="@+id/comments"
 
         />

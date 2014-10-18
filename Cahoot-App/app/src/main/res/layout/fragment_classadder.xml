@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.lukerehmann.cahoot.classadder$PlaceholderFragment">
 
 
@@ -33,7 +33,6 @@
             android:id="@+id/goToClassList"
             android:layout_below="@+id/editText2"
 
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:onClick="AddClasses"
