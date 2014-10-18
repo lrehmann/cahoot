@@ -12,10 +12,9 @@
 
     <TextView
         android:id="@+id/top"
-        android:text="[UNIVERSITY NAME]\n"
+        android:text="Class Name\n"
         android:layout_width="wrap_content"
         android:textSize="30sp"
-        android:onClick="SelectClass"
         android:layout_height="150px" />
 
 
@@ -26,7 +25,7 @@
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
-        android:onClick="SelectClass"
+        android:onClick="StudyDetails"
         android:layout_below="@+id/top"
 
         />
@@ -37,7 +36,7 @@
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
-        android:onClick="SelectClass"
+        android:onClick="StudyDetails"
         android:layout_below="@+id/class1"
 
         />
@@ -49,7 +48,7 @@
         android:textSize="30sp"
 
         android:layout_below="@+id/class2"
-        android:onClick="SelectClass"
+        android:onClick="StudyDetails"
 
         />
 </RelativeLayout>
