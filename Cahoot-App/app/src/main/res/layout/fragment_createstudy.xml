@@ -51,7 +51,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
+< android:layout_width android:layout_width="match_parent"
+    android:layout_height="match_parent" />="match_parent" /><<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
