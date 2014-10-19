@@ -19,7 +19,7 @@
     <!--Add a description of topic of study and location-->
 
 
-    <!--Create Study Button-->
+    <!--Create Study Button
 
     <EditText
         android:layout_width="fill_parent"
@@ -133,5 +133,5 @@
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/enterDescription"
         android:layout_alignStart="@+id/enterDescription" />
-
+    -->
 </RelativeLayout>
