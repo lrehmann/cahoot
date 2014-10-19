@@ -26,7 +26,7 @@ import android.view.View;
 
 public class makestudy extends Activity {
 
-    public void LoginCahoot(View view) {
+    public void studycreatesuccess(View view) {
 
         Intent intent = new Intent(this, studycreatesuccess.class);
         startActivity(intent);
