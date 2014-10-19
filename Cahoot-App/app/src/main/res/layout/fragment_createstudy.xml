@@ -53,16 +53,22 @@
         android:layout_height="wrap_content"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         android:text="New Button"
         android:id="@+id/button"
-=======
         android:text="Create a Study Group"
         android:id="@+id/createStudyButton"
         android:onClick="CreateAStudyGroup"
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
         android:text="Create a Study Group"
         android:id="@+id/createStudy"
+>>>>>>> Stashed changes
+=======
+
 >>>>>>> Stashed changes
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
