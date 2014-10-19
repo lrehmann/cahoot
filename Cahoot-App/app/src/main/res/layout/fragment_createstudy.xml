@@ -40,7 +40,7 @@
         android:layout_alignStart="@+id/enterLocation" />
 
     <EditText
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enterLocation"
         android:text="Enter Location"
@@ -52,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         android:text="New Button"
         android:id="@+id/button"
 =======
@@ -59,12 +60,17 @@
         android:id="@+id/createStudyButton"
         android:onClick="CreateAStudyGroup"
 >>>>>>> Stashed changes
+=======
+        android:text="Create a Study Group"
+        android:id="@+id/createStudy"
+>>>>>>> Stashed changes
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="CreateAStudyGroup"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Class Name"
@@ -74,7 +80,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Location"

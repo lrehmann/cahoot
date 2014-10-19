@@ -1,7 +1,6 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
 // Luke Rehmann
 
@@ -46,7 +44,7 @@ public class classstudies extends Activity {
 
     public void MakeStudy(View view) {
 
-        Intent intent = new Intent(this, createstudy.class);
+        Intent intent = new Intent(this, makestudy.class);
         startActivity(intent);
     }
 
