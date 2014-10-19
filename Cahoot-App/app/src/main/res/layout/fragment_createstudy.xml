@@ -8,28 +8,10 @@
     tools:context="com.example.lukerehmann.cahoot.createstudy$PlaceholderFragment">
 
     <!--Add a class-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Select Class"
-        android:id="@+id/addaclassheader"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <!--Drop-down list of all user's classes-->
 
     <!--Add study location-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Location"
-        android:id="@+id/addalocationheader"
-        android:layout_marginTop="47dp"
-        android:layout_below="@+id/addaclassheader"
-        android:layout_alignLeft="@+id/addaclassheader" />
 
     <!--Get GPS-->
 
@@ -40,44 +22,72 @@
 
     <!--Create Study Button-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Description"
-        android:id="@+id/descriptionHeader"
-        android:layout_toEndOf="@+id/addalocationheader"
-        android:layout_below="@+id/addalocationheader"
-        android:layout_alignLeft="@+id/addalocationheader"
-        android:layout_alignStart="@+id/addalocationheader"
-        android:layout_marginTop="69dp" />
-
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enterClassName"
-        android:layout_below="@+id/addaclassheader"
-        android:layout_alignLeft="@+id/addaclassheader"
-        android:layout_alignStart="@+id/addaclassheader"
-        android:text="Enter class Name" />
+        android:text="Enter class Name"
+        android:layout_below="@+id/classNameDescription"
+        android:layout_alignLeft="@+id/classNameDescription"
+        android:layout_alignStart="@+id/classNameDescription" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enterDescription"
+        android:text="Enter Description"
         android:layout_below="@+id/descriptionHeader"
-        android:layout_alignLeft="@+id/descriptionHeader"
-        android:layout_alignStart="@+id/descriptionHeader"
-        android:text="Enter Description" />
+        android:layout_alignLeft="@+id/enterLocation"
+        android:layout_alignStart="@+id/enterLocation" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enterLocation"
-        android:layout_below="@+id/addalocationheader"
+        android:text="Enter Location"
+        android:layout_alignStart="@+id/enterClassName"
+        android:layout_below="@+id/locationHeader"
+        android:layout_alignLeft="@+id/enterClassName" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="Enter Location" />
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Class Name"
+        android:id="@+id/classNameDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:id="@+id/locationHeader"
+        android:layout_below="@+id/enterClassName"
+        android:layout_alignLeft="@+id/enterClassName"
+        android:layout_alignStart="@+id/enterClassName"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description"
+        android:id="@+id/descriptionHeader"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/enterDescription"
+        android:layout_alignStart="@+id/enterDescription" />
 
 
 </RelativeLayout>
