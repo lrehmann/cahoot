@@ -29,31 +29,22 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/enterClassHeader"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Location"
         android:id="@+id/enterLocationHeader"
-        android:layout_below="@+id/editText"
+        android:layout_above="@+id/enterLocation"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="58dp" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enterLocation"
         android:layout_toEndOf="@+id/enterLocationHeader"
-        android:layout_below="@+id/enterLocationHeader"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -63,18 +54,28 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:id="@+id/enterDescription"
-        android:layout_marginTop="49dp"
-        android:layout_below="@+id/enterLocation"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentLeft="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
         android:layout_toEndOf="@+id/enterLocationHeader"
+        android:layout_above="@+id/createStudyGroup"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/enterDescription"
-        android:layout_alignParentLeft="true" />
+        android:layout_marginBottom="65dp" />
+
+    <Spinner
+        android:entries="@array/classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_toEndOf="@+id/enterDescription"
+        android:layout_below="@+id/enterClassHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
