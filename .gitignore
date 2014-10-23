@@ -106,3 +106,13 @@ Cahoot-App/.gradle/1.12/taskArtifacts/fileSnapshots.bin
 Cahoot-App/.gradle/1.12/taskArtifacts/fileHashes.bin
 
 Cahoot-App/.gradle/1.12/taskArtifacts/taskArtifacts.bin
+
+*.bin
+
+Cahoot-App/.gradle/1.12/taskArtifacts/fileHashes.bin
+
+Cahoot-App/.gradle/1.12/taskArtifacts/fileSnapshots.bin
+
+Cahoot-App/.gradle/1.12/taskArtifacts/taskArtifacts.bin
+
+Cahoot-App/.gradle/1.12/taskArtifacts/cache.properties.lock

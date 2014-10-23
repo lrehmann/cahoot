@@ -21,7 +21,7 @@
         android:layout_alignParentStart="true" />
     <TextView
         android:id="@+id/top"
-        android:text="[UNIVERSITY NAME]\n"
+        android:text="University of Michigan\n"
         android:layout_width="wrap_content"
         android:textSize="30sp"
         android:onClick="SelectClass"
@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/class2"
-        android:text="SI 001"
+        android:text="SI 582"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
@@ -51,7 +51,7 @@
         />
     <Button
         android:id="@+id/class3"
-        android:text="SI 002"
+        android:text="SI 622"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="30sp"
