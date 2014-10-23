@@ -2,11 +2,11 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
-.DS_Store
+*.DS_Store
 /build
-.iml
-.bin
-.lock
+*.iml
+*.bin
+*.lock
 # Built application files
 /*/build/
 
