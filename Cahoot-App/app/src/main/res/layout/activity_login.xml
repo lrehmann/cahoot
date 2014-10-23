@@ -9,7 +9,7 @@
     tools:context="com.example.lukerehmann.cahoot.login">
 
     <TextView
-        android:text="Welcome to Cahoot!\n\nLogin:"
+        android:text="Welcome to Cahoot!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/login" />
@@ -19,8 +19,11 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
+        android:id="@+id/email"
         android:layout_below="@+id/login"
-        android:id="@+id/email" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -28,9 +31,9 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
-        android:layout_below="@+id/email"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/passwordText"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,7 +47,26 @@
         android:onClick="LoginCahoot"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/passwordText"
+        android:layout_below="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Login"
+        android:id="@+id/login_text"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
