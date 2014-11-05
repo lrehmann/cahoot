@@ -36,13 +36,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Location"
-        android:id="@+id/enterLocationHeader"
+        android:text="Time"
+        android:id="@+id/enterTimeHeader"
         style="@style/textStyle"
         android:layout_below="@+id/spinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterTime"
+        android:layout_toEndOf="@+id/enterTimeHeader"
+        style="@style/textInput"
+        android:layout_below="@+id/enterTimeHeader"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"
+        android:id="@+id/enterLocationHeader"
+        style="@style/textStyle"
+        android:layout_below="@+id/enterTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -60,21 +84,22 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:id="@+id/enterDescription"
-        android:layout_alignParentStart="true"
         style="@style/textStyle"
         android:layout_below="@+id/enterLocation"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
-        android:layout_toEndOf="@+id/enterLocationHeader"
+        android:layout_toEndOf="@+id/enterDescriptionHeader"
         android:layout_alignParentStart="true"
         style="@style/textInput"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/enterDescription"
-        android:layout_alignParentLeft="true" />
+        android:layout_marginTop="15dp" />
 
     <Spinner
         android:entries="@array/classes"
