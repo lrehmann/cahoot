@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 
 // Joyce Sakata
@@ -57,4 +58,21 @@ public class makestudy extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+//change the time to the current time if button is selected
+    public void buttonTimeFill(View view) {
+//grab the edit text view
+        EditText time = (EditText) findViewById(R.id.enterTime);
+//if the button is selected, show the current time
+        if(view.getId() == R.id.buttonTime) {
+
+            time.setText("1:00pm");
+
+        }
+
+
+    }
+
+
 }

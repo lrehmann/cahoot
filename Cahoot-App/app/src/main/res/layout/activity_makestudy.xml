@@ -116,10 +116,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Current Time"
-        android:id="@+id/button"
+        android:id="@+id/buttonTime"
         android:layout_toEndOf="@+id/enterTime"
         android:layout_alignTop="@+id/enterTime"
         android:layout_alignRight="@+id/enterLocation"
-        android:layout_alignEnd="@+id/enterLocation" />
+        android:layout_alignEnd="@+id/enterLocation"
+        android:onClick="buttonTimeFill"/>
 
 </RelativeLayout>
