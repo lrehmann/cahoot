@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-
+import android.text.format.Time;
 
 // Joyce Sakata
 
@@ -66,8 +66,10 @@ public class makestudy extends Activity {
         EditText time = (EditText) findViewById(R.id.enterTime);
 //if the button is selected, show the current time
         if(view.getId() == R.id.buttonTime) {
+            Time today = new Time(Time.getCurrentTimezone());
+            today.setToNow();
 
-            time.setText("1:00pm");
+            time.setText(today.format("%k:%M"));
 
         }
 
