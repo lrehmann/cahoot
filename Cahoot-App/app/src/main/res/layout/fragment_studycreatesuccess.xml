@@ -18,7 +18,7 @@
         android:text="You successfully created a study group!"
         android:id="@+id/successHeader"
         style="@style/textStyle"
-        android:textSize="25dp"
+        android:textSize="23dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="165dp"
         android:layout_alignParentTop="true"
