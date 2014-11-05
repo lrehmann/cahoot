@@ -18,9 +18,14 @@ import android.os.Build;
 
 public class university extends Activity {
 
+    //public final static String EXTRA_MESSAGE = "com.example.lukerehmann.cahoot.MESSAGE"
+
+
     public void UniversitySelected(View view) {
 
         Intent intent = new Intent(this, classadder.class);
+        /*String message = String.valueOf(id.UniversitySelect);
+        intent.putExtra(EXTRA_MESSAGE, message);*/
         startActivity(intent);
     }
 

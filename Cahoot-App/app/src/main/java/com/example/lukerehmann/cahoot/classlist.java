@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 // Mingjue Ni
 
@@ -22,10 +23,6 @@ public class classlist extends Activity {
         startActivity(intent);
     }
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +32,14 @@ public class classlist extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+        /*Intent intent = getIntent);
+        String Message = intent.getStringExtra(universitySelected.EXTRA_MESSAGE);
+
+        String id = (String)parseLong(message);
+
+        TextView textview = (textview)findViewById(R.id.textview.UniversitySelect)
+        TextView.setText(classlist.get(id));*/
     }
 
 
