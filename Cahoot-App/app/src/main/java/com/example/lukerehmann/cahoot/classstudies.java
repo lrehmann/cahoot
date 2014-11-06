@@ -9,6 +9,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // Luke Rehmann
 
@@ -36,6 +40,15 @@ public void loadclass(View view,classid){
 
 public class classstudies extends Activity {
 
+    private void initList(){
+        courselist.add("Course 1: SI 543");
+        courselist.add("Course 2: SI 582");
+        courselist.add("Course 3: SI 622");
+    }
+
+    List<String> courselist = new ArrayList<String>();
+
+    /* for now
     public void StudyDetails(View view) {
 
         Intent intent = new Intent(this, studydetail.class);
@@ -47,18 +60,35 @@ public class classstudies extends Activity {
         Intent intent = new Intent(this, makestudy.class);
         startActivity(intent);
     }
-
+*/
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classstudies);
+        /* for now
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+        */
+
+        initList();
+
+        // Get the message from the intent
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(classlist.EXTRA_MESSAGE);
+
+        int id = (int) Long.parseLong(message);
+
+        // Create the text view
+        TextView textView = new TextView(this);
+        textView.setTextSize(35);
+        textView.setText(courselist.get(id));
+
+        setContentView(textView);
     }
 
 
@@ -84,7 +114,11 @@ public class classstudies extends Activity {
     /**
      * A placeholder fragment containing a simple view.
      */
+
+
+   /* for now
     public static class PlaceholderFragment extends Fragment {
+
 
         public PlaceholderFragment() {
         }
@@ -95,5 +129,5 @@ public class classstudies extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_classstudies, container, false);
             return rootView;
         }
-    }
+    } */
 }

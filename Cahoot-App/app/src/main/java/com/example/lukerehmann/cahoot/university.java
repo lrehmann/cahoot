@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-// Minjue Ni
+// Mingjue Ni
 
 
 
@@ -24,8 +24,8 @@ public class university extends Activity {
     public void UniversitySelected(View view) {
 
         Intent intent = new Intent(this, classadder.class);
-        /*String message = String.valueOf(id.UniversitySelect);
-        intent.putExtra(EXTRA_MESSAGE, message);*/
+        //String message = String.valueOf(id.UniversitySelect);
+        //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 

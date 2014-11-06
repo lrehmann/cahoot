@@ -17,5 +17,11 @@
     <item android:id =@+id/ClassStudies"
         android:title="Class Studies"
         android:orderInCategory="3"
-        android:showAsAction="always" /> -->
+        android:showAsAction="always" />
+    <item android:id =@+id/Logout"
+        android:title="Logout"
+        android:orderInCategory="4"
+        android:showAsAction="always" />
+     -->
+
 </menu>
