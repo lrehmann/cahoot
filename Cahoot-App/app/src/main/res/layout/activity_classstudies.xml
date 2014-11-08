@@ -14,6 +14,49 @@
         android:id="@+id/course"
         />
 
+    <Button
+        android:id="@+id/addclass"
+        android:text="Create Study"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+        android:onClick="MakeStudy"
+        android:layout_below="@+id/top"
 
+        />
+
+    <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
+    <Button
+        android:id="@+id/class1"
+        android:text="Stats at Starbucks"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+        android:onClick="StudyDetails"
+        android:layout_below="@+id/addclass"
+
+        />
+
+    <Button
+        android:id="@+id/class2"
+        android:text="Learning Chapter 3"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+        android:onClick="StudyDetails"
+        android:layout_below="@+id/class1"
+
+        />
+    <Button
+        android:id="@+id/class3"
+        android:text="Small Study Group"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="30sp"
+
+        android:layout_below="@+id/class2"
+        android:onClick="StudyDetails"
+
+        />
     </LinearLayout>
 
