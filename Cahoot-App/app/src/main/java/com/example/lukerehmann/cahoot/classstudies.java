@@ -47,13 +47,13 @@ public class classstudies extends Activity {
     }
 
     List<String> courselist = new ArrayList<String>();
-
-    /* for 
     public void StudyDetails(View view) {
 
         Intent intent = new Intent(this, studydetail.class);
         startActivity(intent);
     }
+    /* for 
+
 
     public void MakeStudy(View view) {
 
