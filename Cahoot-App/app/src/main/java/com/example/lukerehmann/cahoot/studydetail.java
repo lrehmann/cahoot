@@ -1,14 +1,11 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
+import android.app.AlertDialog;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 
 // Luke Rehmann
 
@@ -39,7 +36,7 @@ public void checkin(){
 
 */
 
-/*
+
 public class studydetail extends Activity {
 
     public void alertButton(View view){
@@ -49,28 +46,21 @@ public class studydetail extends Activity {
         .setNeutralButton("OK", null)
         .show();
     }
-*/
-
-public class studydetail extends Activity {
-
-
 
 
     protected void showbox(View view) {
         //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
-//test this maybe works
-        FragmentManager fm = getFragmentManager();
-        dialog dialog = new dialog();
-        dialog.setRetainInstance(true);
-        dialog.show(fm, "fragment_name");
 
-
+<<<<<<< Updated upstream
         getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
 
+=======
+>>>>>>> Stashed changes
     }
+
 
 
     @Override
@@ -92,20 +82,6 @@ public class studydetail extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_studydetail, container, false);
-            return rootView;
-        }
     }
-}
+
 
