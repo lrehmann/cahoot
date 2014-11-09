@@ -5,7 +5,6 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
-
     <item android:id="@+id/classadder"
         android:title="Class Select"
         android:orderInCategory="1"
@@ -14,9 +13,13 @@
         android:title="Class List"
         android:orderInCategory="2"
         android:showAsAction="never" />
+    <item android:id ="@+id/MakeStudy"
+        android:title="Create a Study"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
     <item android:id ="@+id/Logout"
         android:title="Logout"
-        android:orderInCategory="3"
+        android:orderInCategory="4"
         android:showAsAction="never" />
 
 </menu>
