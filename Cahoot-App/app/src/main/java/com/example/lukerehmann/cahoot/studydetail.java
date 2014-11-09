@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
@@ -5,6 +6,8 @@ import android.app.AlertDialog;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+=======
+>>>>>>> Stashed changes
 
 // Luke Rehmann
 
@@ -30,11 +33,29 @@ public void checkin(){
     //pop-up notifying the user they have checked in
 
 }
-
-
-
 */
+package com.example.lukerehmann.cahoot;
+import android.app.Activity;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
+import android.os.Bundle;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
+<<<<<<< Updated upstream
 
 public class studydetail extends Activity {
 
@@ -45,12 +66,38 @@ public class studydetail extends Activity {
         .setNeutralButton("OK", null)
         .show();
     }
+=======
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
+public class studydetail extends Activity {
 
-    protected void showbox(View view) {
-        //super.onCreate(savedInstanceState);
+    final Context context = this;
+    private Button button;
+
+    public void onCreate(Bundle savedInstanceState) {
+>>>>>>> Stashed changes
+
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        getFragmentManager().beginTransaction()
+                    .add(R.id.container, new PlaceholderFragment())
+                    .commit();
+
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
 
 
@@ -77,3 +124,47 @@ public class studydetail extends Activity {
     }
 
 
+=======
+        button = (Button) findViewById(R.id.attend);
+
+        // add button listener
+        button.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                        context);
+
+                // set title
+                alertDialogBuilder.setTitle("Check in to this study?");
+
+                // set dialog message
+                alertDialogBuilder
+                        .setMessage("Click yes to exit!")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // if this button is clicked, close
+                                // current activity
+                                studydetail.this.finish();
+                            }
+                        })
+                        .setNegativeButton("No",new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // if this button is clicked, just close
+                                // the dialog box and do nothing
+                                dialog.cancel();
+                            }
+                        });
+
+                // create alert dialog
+                AlertDialog alertDialog = alertDialogBuilder.create();
+
+                // show it
+                alertDialog.show();
+            }
+        });
+    }
+}
+>>>>>>> Stashed changes

@@ -17,6 +17,17 @@
     <item android:id ="@+id/Logout"
         android:title="Logout"
         android:orderInCategory="3"
+    <item android:id ="@+id/ClassList"
+        android:title="Class List"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+    <item android:id ="@+id/ClassStudies"
+        android:title="Class Studies"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+    <item android:id ="@+id/Logout"
+        android:title="Logout"
+        android:orderInCategory="4"
         android:showAsAction="never" />
 
 </menu>
