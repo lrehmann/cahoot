@@ -6,7 +6,7 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
 
-    <item android:id="@+id/classadder"
+    <item android:id="@+id/ClassAdder"
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />
