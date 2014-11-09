@@ -48,7 +48,7 @@ public class classstudies extends Activity {
 
     List<String> courselist = new ArrayList<String>();
 
-    /* for now
+    /* for 
     public void StudyDetails(View view) {
 
         Intent intent = new Intent(this, studydetail.class);
@@ -116,7 +116,7 @@ public class classstudies extends Activity {
      */
 
 
-   /* for now
+   /* not using the fragment at the time.
     public static class PlaceholderFragment extends Fragment {
 
 

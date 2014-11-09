@@ -17,6 +17,7 @@ import android.os.Build;
 
 public class classadder extends Activity {
 
+//public class classadder extends ActionBarActivity {}
 
     public void AddClasses(View view) {
 
