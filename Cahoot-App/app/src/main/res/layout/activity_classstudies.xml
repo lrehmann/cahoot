@@ -7,12 +7,14 @@
     tools:ignore="MergeRootFrame"
     android:orientation="vertical">
 
+
     <TextView
+        android:id="@+id/top"
+        android:text="SI 543 Study Groups\n"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="course N"
-        android:id="@+id/course"
-        />
+        android:textSize="30sp"
+        android:layout_height="150px" />
+
 
     <Button
         android:id="@+id/addclass"

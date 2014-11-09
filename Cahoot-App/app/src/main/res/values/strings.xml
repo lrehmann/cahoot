@@ -13,10 +13,13 @@
     <string name="title_activity_studycreatesuccess">studycreatesuccess</string>
     <string name="title_activity_university">university</string>
     <string name="title_activity_makestudy">makestudy</string>
+
     <string-array name="classes">
         <item>SI543: Programming 1 (Java) </item>
         <item>SI622: Evaluation of Systems and Services</item>
         <item>SI582: Interaction Design</item>
     </string-array>
+
+    <string name="title_activity_course_studies">CourseStudies</string>
 
 </resources>

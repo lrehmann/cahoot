@@ -84,11 +84,17 @@ public class classstudies extends Activity {
         int id = (int) Long.parseLong(message);
 
         // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(35);
+        //TextView textView = new TextView(this);
+        //textView.setTextSize(35);
+        //textView.setText(courselist.get(id));
+
+        //setContentView(textView);
+
+
+        TextView textView = (TextView) findViewById(R.id.top);
         textView.setText(courselist.get(id));
 
-        setContentView(textView);
+
     }
 
 

@@ -76,6 +76,10 @@
             android:name=".makestudy"
             android:label="@string/title_activity_makestudy" >
         </activity>
+        <activity
+            android:name=".CourseStudies"
+            android:label="@string/title_activity_course_studies" >
+        </activity>
     </application>
 
     <!--
