@@ -56,9 +56,8 @@ public class studydetail extends Activity {
 
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void showbox(View view) {
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
 //test this maybe works
         FragmentManager fm = getFragmentManager();
@@ -67,11 +66,10 @@ public class studydetail extends Activity {
         dialog.show(fm, "fragment_name");
 
 
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
+        getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
-        }
+
     }
 
 

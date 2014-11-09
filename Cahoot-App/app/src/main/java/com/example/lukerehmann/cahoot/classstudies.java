@@ -52,7 +52,6 @@ public class classstudies extends Activity {
         Intent intent = new Intent(this, studydetail.class);
         startActivity(intent);
     }
-    /* for 
 
 
     public void MakeStudy(View view) {
@@ -60,7 +59,6 @@ public class classstudies extends Activity {
         Intent intent = new Intent(this, makestudy.class);
         startActivity(intent);
     }
-*/
 
 
     @Override
