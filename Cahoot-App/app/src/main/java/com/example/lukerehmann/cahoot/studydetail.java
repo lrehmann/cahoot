@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
@@ -6,9 +5,6 @@ import android.app.AlertDialog;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-=======
->>>>>>> Stashed changes
-
 // Luke Rehmann
 
 
@@ -55,7 +51,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-<<<<<<< Updated upstream
 
 public class studydetail extends Activity {
 
@@ -66,7 +61,6 @@ public class studydetail extends Activity {
         .setNeutralButton("OK", null)
         .show();
     }
-=======
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -82,22 +76,14 @@ public class studydetail extends Activity {
     private Button button;
 
     public void onCreate(Bundle savedInstanceState) {
->>>>>>> Stashed changes
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
 
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     }
 
 
@@ -124,7 +110,6 @@ public class studydetail extends Activity {
     }
 
 
-=======
         button = (Button) findViewById(R.id.attend);
 
         // add button listener
@@ -167,4 +152,3 @@ public class studydetail extends Activity {
         });
     }
 }
->>>>>>> Stashed changes
