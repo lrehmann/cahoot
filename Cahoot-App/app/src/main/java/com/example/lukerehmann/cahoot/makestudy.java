@@ -26,7 +26,37 @@ import android.text.format.Time;
     */
 
 public class makestudy extends Activity {
+    public boolean onOptionsItemSelected(MenuItem item){
 
+        int id=item.getItemId();
+        if (id==R.id.MakeStudy){
+            Intent intent = new Intent(this, makestudy.class);
+            startActivity(intent);
+            return true;
+
+        }
+        if (id==R.id.classadder){
+            Intent intent = new Intent(this, classadder.class);
+            startActivity(intent);
+            return true;
+
+        }
+        if (id==R.id.ClassList){
+            Intent intent = new Intent(this, classlist.class);
+            startActivity(intent);
+            return true;
+
+        }
+        if (id==R.id.Logout){
+            Intent intent = new Intent(this, login.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     public void studycreatesuccess(View view) {
 
         Intent intent = new Intent(this, studycreatesuccess.class);
@@ -47,17 +77,6 @@ public class makestudy extends Activity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 
 //change the time to the current time if button is selected
