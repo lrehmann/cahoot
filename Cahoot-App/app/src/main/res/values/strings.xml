@@ -21,5 +21,7 @@
     </string-array>
 
     <string name="title_activity_course_studies">CourseStudies</string>
+    <string name="title_activity_study_details">StudyDetails</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

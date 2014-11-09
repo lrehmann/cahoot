@@ -1,8 +1,8 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,61 +15,42 @@ import android.view.ViewGroup;
 
 
 /*
-
 public void extendmap(View view){
     //resize the map fragment to the whole page
     //add resize button to reduce the map and call reducemap()
-
 }
-
 public void reducemap(View view){
     //reduce the size of the map
     //remove the button from the extended map view
-
 }
-
-
 public void checkin(){
     //add the user to the study group
     //pop-up notifying the user they have checked in
-
 }
-
-
-
 */
 
-/*
+
 public class studydetail extends Activity {
 
     public void alertButton(View view){
         new AlertDialog.Builder(this)
-        .setTitle("Success!")
-        .setMessage("You Successfully Checked In!")
-        .setNeutralButton("OK", null)
-        .show();
+                .setTitle("Success!")
+                .setMessage("You Successfully Checked In!")
+                .setNeutralButton("OK", null)
+                .show();
     }
-*/
-
-public class studydetail extends Activity {
 
 
 
-
-    protected void showbox(View view) {
-        //super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
-//test this maybe works
-        FragmentManager fm = getFragmentManager();
-        dialog dialog = new dialog();
-        dialog.setRetainInstance(true);
-        dialog.show(fm, "fragment_name");
-
-
-        getFragmentManager().beginTransaction()
+        if (savedInstanceState == null) {
+            getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
-
+        }
     }
 
 
@@ -125,4 +106,3 @@ public class studydetail extends Activity {
         }
     }
 }
-

@@ -80,6 +80,10 @@
             android:name=".CourseStudies"
             android:label="@string/title_activity_course_studies" >
         </activity>
+        <activity
+            android:name=".StudyDetails"
+            android:label="@string/title_activity_study_details" >
+        </activity>
     </application>
 
     <!--

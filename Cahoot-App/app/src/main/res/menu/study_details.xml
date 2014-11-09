@@ -1,16 +1,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.lukerehmann.cahoot.classstudies" >
+    tools:context="com.example.lukerehmann.cahoot.StudyDetails" >
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
-<<<<<<< HEAD
-
-    <item android:id="@+id/ClassAdder"
-=======
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
     <item android:id="@+id/classadder"
->>>>>>> FETCH_HEAD
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />

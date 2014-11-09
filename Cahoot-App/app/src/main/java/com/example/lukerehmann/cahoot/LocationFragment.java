@@ -2,7 +2,7 @@ package com.example.lukerehmann.cahoot;
 
         import android.app.Activity;
         import android.os.Bundle;
-
+/*
 public class LocationFragment extends studydetail {
 
     @Override
@@ -10,5 +10,5 @@ public class LocationFragment extends studydetail {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
     }
-}
+}*/
 ///Google Maps Java End
