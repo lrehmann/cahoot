@@ -2,7 +2,6 @@ package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -52,13 +51,6 @@ public class studydetail extends Activity {
         //super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
 
-<<<<<<< Updated upstream
-        getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-
-=======
->>>>>>> Stashed changes
     }
 
 
