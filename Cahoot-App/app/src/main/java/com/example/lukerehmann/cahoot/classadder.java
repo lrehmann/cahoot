@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-import android.view.MenuInflater
+import android.view.MenuInflater;
 
 
 // Mingjue Ni - Class Addition Page (select your classes)
@@ -81,34 +81,6 @@ public boolean onOptionsItemSelected(MenuItem item){
         return super.onCreateOptionsMenu(menu);
     }
 
-<<<<<<< HEAD
-=======
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
-
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        else if (id == R.id.ClassList) {
-            return true;
-        }
-
-        else if (id == R.id.ClassStudies) {
-            return true;
-        }
-
-        else if (id == R.id.Logout) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
->>>>>>> FETCH_HEAD
 
     /**
      * A placeholder fragment containing a simple view.

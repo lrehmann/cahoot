@@ -4,15 +4,10 @@
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"
-<<<<<<< HEAD
         android:showAsAction="never"
         android:onClick="CreateAStudyGroup"/>
 
-    <item android:id="@+id/ClassAdder"
-=======
-        android:showAsAction="never" />
     <item android:id="@+id/classadder"
->>>>>>> FETCH_HEAD
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />

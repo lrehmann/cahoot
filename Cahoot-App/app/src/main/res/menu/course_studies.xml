@@ -5,12 +5,7 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
-<<<<<<< HEAD
-
-    <item android:id="@+id/ClassAdder"
-=======
     <item android:id="@+id/classadder"
->>>>>>> FETCH_HEAD
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />
