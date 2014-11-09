@@ -1,8 +1,8 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -39,7 +39,7 @@ public void checkin(){
 
 */
 
-
+/*
 public class studydetail extends Activity {
 
     public void alertButton(View view){
@@ -49,6 +49,10 @@ public class studydetail extends Activity {
         .setNeutralButton("OK", null)
         .show();
     }
+*/
+
+public class studydetail extends Activity {
+
 
 
 
@@ -56,6 +60,13 @@ public class studydetail extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studydetail);
+//test this maybe works
+        FragmentManager fm = getFragmentManager();
+        dialog dialog = new dialog();
+        dialog.setRetainInstance(true);
+        dialog.show(fm, "fragment_name");
+
+
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
