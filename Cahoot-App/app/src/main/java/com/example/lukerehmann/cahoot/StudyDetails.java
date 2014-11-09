@@ -1,13 +1,22 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class StudyDetails extends Activity {
 
+    public void alertButton(View view){
+        new AlertDialog.Builder(this)
+                .setTitle("Success!")
+                .setMessage("You Successfully Checked In!")
+                .setNeutralButton("OK", null)
+                .show();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -96,7 +96,7 @@
         android:id="@+id/attend"
         android:text="Check in"
         android:layout_width="match_parent"
-        android:onClick="showbox"
+        android:onClick="alertButton"
         android:layout_height="65dp"
         android:textColor="#2b2b2b"
         android:textSize="20dp"
