@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
 
 
     <TextView
@@ -21,8 +21,9 @@
         android:text="Yes"
         android:textSize="30dp"
         android:id="@+id/yeslogout"
-        android:layout_tobottomof="@id/logoutmsg"
-        />
+        android:layout_below="@+id/logoutmsg"
+        android:layout_toLeftOf="@+id/nologout"
+        android:layout_toStartOf="@+id/nologout" />
 
     <Button
         android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
         android:text="No"
         android:textSize="30dp"
         android:id="@+id/nologout"
-        />
+        android:layout_below="@+id/logoutmsg"
+        android:layout_centerHorizontal="true" />
 
-</LinearLayout>
+</RelativeLayout>
