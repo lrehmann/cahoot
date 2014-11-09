@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lukerehmann.cahoot.classlist" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/classadder"
+        android:title="Class Select"
+        android:orderInCategory="1"
+        android:showAsAction="never" />
+    <item android:id ="@+id/ClassStudies"
+        android:title="Class Studies"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+    <item android:id ="@+id/Logout"
+        android:title="Logout"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+
+</menu>
