@@ -1,0 +1,14 @@
+Shared Preferences Uses
+
+Login
+	Storing Username, Password and User Registrations
+	
+University
+	Input Username as key, university stored as shared preferences
+
+Person's Courses
+	Input Username as key, classes brought up as an array? 
+	Unique Shared Preferences for each user's classes
+	UsernameClass1
+	UsernameClass2
+	
