@@ -1,6 +1,7 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,6 +9,8 @@ import android.content.Intent;
 import android.view.View;
 
 public class login extends Activity {
+
+
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
@@ -39,11 +42,13 @@ public class login extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     public void LoginCahoot(View view) {
 
         Intent intent = new Intent(this, university.class);
         startActivity(intent);
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
