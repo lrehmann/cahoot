@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.content.SharedPreferences;
-import android.preference.PrefenceManager;
+import android.preference.PreferenceManager;
 
 
 // Mingjue Ni
