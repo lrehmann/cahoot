@@ -11,9 +11,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+<<<<<<< Updated upstream
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+=======
+import java.util.ArrayList;
+import java.util.List;
+import android.os.Bundle;
+import android.view.View;
+import android.content.SharedPreferences;
+import android.widget.Button;
+import android.widget.EditText;
+>>>>>>> Stashed changes
 
 // Mingjue Ni
 
@@ -55,6 +65,16 @@ public class university extends Activity {
 
 
     public void UniversitySelected(View view) {
+
+        SharedPreferences storeduniversity = getSharedPreferences("universityfile",Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor=storeduniversity.edit();
+
+        EditText editText = (EditText) findViewById(R.id.enterDescription);
+        String uni=editText.getText().toString();
+
+        editor.putString("university",uni);
+        editor.apply();
+
 
         Intent intent = new Intent(this, classadder.class);
         //String message = String.valueOf(id.UniversitySelect);

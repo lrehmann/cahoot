@@ -18,7 +18,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import android.os.Build;
+import java.util.ArrayList;
+import java.util.List;
+import android.os.Bundle;
+import android.view.View;
+import android.content.SharedPreferences;
+import android.widget.Button;
+import android.widget.EditText;
 // Mingjue Ni
 
 
@@ -81,6 +88,14 @@ public class classlist extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+
+        SharedPreferences storeduniversity = getSharedPreferences("universityfile",Activity.MODE_PRIVATE);
+        String uni=storeduniversity.getString("university", "Select a University");
+
+        TextView titleitem = (TextView) findViewById(R.id.top);
+        titleitem.setText(uni);
+
         //fetch university name to be shown in the header of class list
         /*Intent intent = getIntent);
         String Message = intent.getStringExtra(universitySelected.EXTRA_MESSAGE);
