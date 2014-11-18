@@ -34,8 +34,8 @@
             android:layout_alignParentStart="true"
             style="@style/textInput"
             android:autoText="true"
-            android:paddingLeft="10dp"
-            android:text="Enter Text Here"
+            android:paddingLeft="8dp"
+            android:hint="Enter Class Name"
             android:textColor="#999999"
             />
 

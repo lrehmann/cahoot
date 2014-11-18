@@ -152,3 +152,7 @@ Cahoot-App/.gradle/1.12/taskArtifacts/fileHashes.bin
 Cahoot-App/.gradle/1.12/taskArtifacts/outputFileStates.bin
 
 Cahoot-App/.gradle/1.12/taskArtifacts/taskArtifacts.bin
+
+*.xml
+
+*.java

@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Select your University"
+        android:text="Enter Name of Unversity"
         android:id="@+id/UniversitySelect"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -57,7 +57,7 @@
         android:textColor="#999999"
         android:autoText="true"
         android:paddingLeft="10dp"
-        android:text="Enter Text Here"
+        android:hint="University Name"
         style="@style/textInput"
 
         android:layout_alignParentRight="true"

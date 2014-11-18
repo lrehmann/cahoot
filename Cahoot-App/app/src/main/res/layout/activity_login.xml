@@ -35,7 +35,9 @@
         android:textColor="#000000"
         android:paddingBottom="8dp"
         android:paddingTop="8dp"
+        android:paddingLeft="8dp"
         android:background="#ffffff"
+        android:hint="Enter User Name"
         />
 
     <EditText
@@ -44,6 +46,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/password"
+        android:hint="Enter Password"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/passwordText"
         android:layout_alignParentLeft="true"
@@ -51,7 +54,9 @@
         android:paddingBottom="8dp"
         android:paddingTop="8dp"
         android:layout_marginTop="5dp"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:paddingLeft="8dp"
+        />
 
     <Button
         android:layout_width="match_parent"
@@ -86,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Login"
+        android:text="User Name"
         android:id="@+id/login_text"
         android:layout_below="@+id/login"
         android:layout_alignParentLeft="true"
