@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.lukerehmann.cahoot.classlist"
     tools:ignore="MergeRootFrame"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    style="@style/defaultStyle">
 
 
     <TextView
@@ -23,12 +24,16 @@
         android:layout_width="wrap_content"
         android:textSize="30sp"
         android:onClick="SelectClass"
-        android:layout_height="150px" />
+        android:layout_height="100px"
+        android:paddingLeft="8dp"
+        android:textColor="#ffffff"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView">
+        android:id="@+id/ClassListView"
+        android:cacheColorHint="#FFDAFF7F"
+        >
 
     </ListView>
     </LinearLayout>

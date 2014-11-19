@@ -3,6 +3,7 @@ package com.example.lukerehmann.cahoot;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,14 +19,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import android.os.Build;
-import java.util.ArrayList;
-import java.util.List;
-import android.os.Bundle;
-import android.view.View;
-import android.content.SharedPreferences;
-import android.widget.Button;
-import android.widget.EditText;
 // Mingjue Ni
 
 
@@ -206,4 +199,9 @@ public class classlist extends Activity {
             return rootView;
         }
     }
+
+ 
+
 }
+
+

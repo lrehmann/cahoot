@@ -31,5 +31,11 @@
         <item name="android:layout_marginBottom">30dp</item>
     </style>
 
+    <style name="fontColor" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:divider">@android:color/white</item>
+    </style>
+
+
 
 </resources>
