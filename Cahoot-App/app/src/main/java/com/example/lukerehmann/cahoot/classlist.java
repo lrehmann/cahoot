@@ -102,13 +102,13 @@ public class classlist extends Activity {
         // we need to pick which view we want our context menu to respond to
         // here, we've chosen the list of team names (which in turn applies the context menu to
         // each list item separately)
-        registerForContextMenu((ListView) findViewById(R.id.listView));
+        registerForContextMenu((ListView) findViewById(R.id.ClassListView));
 
         // we call this initiList function to fill in our list class variable with our team names
         initList();
 
         // adapters are what we use to associate the list variable and its contents with the list view
-        ListView courselistView = (ListView) findViewById(R.id.listView);
+        ListView courselistView = (ListView) findViewById(R.id.ClassListView);
         SimpleAdapter simpleAdpt = new SimpleAdapter(this, courselist, android.R.layout.simple_list_item_1, new String[] {"course"}, new int[] {android.R.id.text1});
         courselistView.setAdapter(simpleAdpt);
 
