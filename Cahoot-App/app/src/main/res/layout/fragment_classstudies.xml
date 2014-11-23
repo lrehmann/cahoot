@@ -15,15 +15,18 @@
         android:text="SI 543 Study Groups\n"
         android:layout_width="wrap_content"
         android:textSize="30sp"
-        android:layout_height="150px" />
-
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
 
     <Button
         android:id="@+id/addclass"
-        android:text="Create Study"
+        android:text="Create a Study Group"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp"
+
         android:onClick="MakeStudy"
         android:layout_below="@+id/top"
 
@@ -32,10 +35,13 @@
     <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
     <Button
         android:id="@+id/class1"
-        android:text="Stats at Starbucks"
+        android:text="Statistics at Starbucks"
         android:layout_width="fill_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="150px"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:onClick="StudyDetails"
         android:layout_below="@+id/addclass"
 
@@ -46,7 +52,9 @@
         android:text="Learning Chapter 3"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp"
         android:onClick="StudyDetails"
         android:layout_below="@+id/class1"
 
@@ -56,10 +64,24 @@
         android:text="Small Study Group"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
-
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/class2"
         android:onClick="StudyDetails"
 
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recently Added Study Groups"
+        android:id="@+id/existingStudyGroup"
+        android:layout_alignBottom="@+id/class1"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -6,60 +6,88 @@
     tools:context="com.example.lukerehmann.cahoot.classstudies"
     tools:ignore="MergeRootFrame"
     android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="25dp"
     style="@style/defaultStyle">
 
 
     <TextView
         android:id="@+id/top"
-        android:text="SI 543 Study Groups\n"
+        android:text="SI 543 - Java Programming\n"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:textSize="30sp"
-        android:layout_height="150px" />
-
-
-    <Button
-        android:id="@+id/addclass"
-        android:text="Create Study"
-        android:layout_width="fill_parent"
-        android:layout_height="150px"
-        android:textSize="30sp"
-        android:onClick="MakeStudy"
-        android:layout_below="@+id/top"
-
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
         />
 
+
+
     <!-- for each class that the user is a part of, display a button that takes them to the studies going on for that class -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upcoming Study Groups"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/upcomingStudyGroups" />
+
     <Button
         android:id="@+id/class1"
-        android:text="Stats at Starbucks"
+        android:text="Java HW at Starbucks"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
+
         android:onClick="StudyDetails"
         android:layout_below="@+id/addclass"
+        android:textSize="25sp"
+        android:textColor="#2b2b2b"
+        android:background="#e4e4e4"
+        android:layout_marginBottom="10dp"
 
         />
 
     <Button
         android:id="@+id/class2"
-        android:text="Learning Chapter 3"
+        android:text="Intents at Sweetwaters"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
         android:onClick="StudyDetails"
         android:layout_below="@+id/class1"
+        android:textSize="25sp"
+        android:textColor="#2b2b2b"
+        android:background="#e4e4e4"
+        android:layout_marginBottom="10dp"
 
         />
     <Button
         android:id="@+id/class3"
-        android:text="Small Study Group"
+        android:text="GPS and maps at Comet"
         android:layout_width="fill_parent"
         android:layout_height="150px"
-        android:textSize="30sp"
-
+        android:textSize="25sp"
+        android:textColor="#2b2b2b"
+        android:background="#e4e4e4"
+        android:layout_marginBottom="10dp"
         android:layout_below="@+id/class2"
         android:onClick="StudyDetails"
 
+        />
+
+    <Button
+        android:id="@+id/addclass"
+        android:text="Create a Study Group"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:onClick="MakeStudy"
+        android:background="#2E8AE6"
+        android:layout_marginTop="40dp"
         />
     </LinearLayout>
 
