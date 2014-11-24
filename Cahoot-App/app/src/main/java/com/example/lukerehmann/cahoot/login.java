@@ -45,6 +45,11 @@ public class login extends Activity {
 
     public void LoginCahoot(View view) {
 
+        SharedPreferences classlist = getSharedPreferences("classlist",Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor=classlist.edit();
+        editor.putString("classarray","");
+        editor.apply();
+
         Intent intent = new Intent(this, university.class);
         startActivity(intent);
     }

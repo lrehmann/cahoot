@@ -2,6 +2,7 @@ package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,11 +39,12 @@ public void loadclass(View view,classid){
 public class classstudies extends Activity {
 
     private void initList(){
+        SharedPreferences classlist = getSharedPreferences("classlist",Activity.MODE_PRIVATE);
+        String allclasses=classlist.getString("classarray", "");
 
-        //Get classes from Shared Pref File
-        courselist.add("Course 1: SI 543");
-        courselist.add("Course 2: SI 582");
-        courselist.add("Course 3: SI 622");
+        for (String item : allclasses.split(";")) {
+            courselist.add(item);
+        }
     }
 
     List<String> courselist = new ArrayList<String>();
