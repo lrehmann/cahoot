@@ -28,8 +28,8 @@
 <!--Studylist Button-->
     <Button
         android:text="Back To All Study Groups"
-        android:onClick="Confirm"
-        android:id="@+id/studylist"
+        android:onClick="classstudies"
+        android:id="@+id/studyList"
         style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
