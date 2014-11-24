@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.lukerehmann.cahoot.R;
 
+/*
 public void logOutDialog() {
 
     AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
@@ -44,11 +45,14 @@ public void logOutDialog() {
 
 }
 
-public void logOut() {
+public void logOut(){
 
-    Toast.makeText(getApplicationContext(), "You've logged out!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"You've logged out!",Toast.LENGTH_SHORT).show();
 
-    Intent intent = new Intent(this, login.class);
-    startActivity(intent);
+        Intent intent=new Intent(this,login.class);
+        startActivity(intent);
 
-    finish();
+        finish();
+
+
+     */

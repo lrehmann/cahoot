@@ -64,6 +64,9 @@ public class university extends Activity {
         editor.apply();
 
 
+        
+
+
         Intent intent = new Intent(this, classadder.class);
         //String message = String.valueOf(id.UniversitySelect);
         //intent.putExtra(EXTRA_MESSAGE, message);

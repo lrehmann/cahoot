@@ -128,9 +128,15 @@ public class classlist extends Activity {
     // in a real app, this would be where we query our database to retrieve the list of teams, but
     // for the sake of our demo, this hard-coded data is sufficient
     private void initList() {
-        courselist.add(createClass("course", "Course 1: SI 543"));
-        courselist.add(createClass("course", "Course 2: SI 582"));
-        courselist.add(createClass("course", "Course 3: SI 622"));
+
+        //get list of current classes and  add class to shared pref file
+        SharedPreferences classlist = getSharedPreferences("classlist",Activity.MODE_PRIVATE);
+        String allclasses=classlist.getString("classarray", "");
+
+        for (String item : allclasses.split(";")) {
+            courselist.add(createClass("course",item));
+        }
+
     }
 
     // this method helps us minimize the amount of repeat calls we need to make in initList to place

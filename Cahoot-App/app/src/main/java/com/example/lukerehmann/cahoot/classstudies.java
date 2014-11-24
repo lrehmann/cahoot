@@ -38,6 +38,8 @@ public void loadclass(View view,classid){
 public class classstudies extends Activity {
 
     private void initList(){
+
+        //Get classes from Shared Pref File
         courselist.add("Course 1: SI 543");
         courselist.add("Course 2: SI 582");
         courselist.add("Course 3: SI 622");
