@@ -39,19 +39,21 @@
             android:textColor="#999999"
             />
         <Button
-            android:layout_height="65dp"
+            android:layout_height="55dp"
             android:text="Add Class"
             android:id="@+id/classaddingbutton"
             android:layout_below="@+id/enterDescription"
             android:onClick="AddClasses"
             style="@style/buttonStyle"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#2E8AE6"
+            android:textColor="#ffffff"/>
 
 
     <Button
         android:layout_height="65dp"
         android:text="Done!"
-        android:layout_below="@+id/classaddingbutton"
         android:id="@+id/goToClassList"
         android:onClick="ToClassList"
         style="@style/buttonStyle"
