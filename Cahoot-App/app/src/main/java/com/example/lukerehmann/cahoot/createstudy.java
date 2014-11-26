@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import javax.security.auth.login.LoginException;
+
 // Joyce Sakata
 
 //Get GPS Location
@@ -28,30 +30,30 @@ import android.view.ViewGroup;
 
 
 
-public class createstudy extends Activity {
+public class CreateStudy extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -62,7 +64,7 @@ public class createstudy extends Activity {
     }
     public void MakeStudy(View view) {
 
-        Intent intent = new Intent(this, studycreatesuccess.class);
+        Intent intent = new Intent(this, StudyCreateSuccess.class);
         startActivity(intent);
     }
 
@@ -106,7 +108,7 @@ public class createstudy extends Activity {
     }
     public void CreateAStudyGroup(View view){
        //Add button code
-        Intent intent = new Intent(this, studycreatesuccess.class);
+        Intent intent = new Intent(this, StudyCreateSuccess.class);
         startActivity(intent);
 
     }

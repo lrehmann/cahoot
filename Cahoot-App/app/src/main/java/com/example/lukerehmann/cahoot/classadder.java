@@ -20,41 +20,42 @@ import android.widget.TextView;
 // Mingjue Ni - Class Addition Page (select your classes)
 
 
-public class classadder extends Activity {
+public class ClassAdder extends Activity {
 
 //public class classadder extends ActionBarActivity {}
 public boolean onOptionsItemSelected(MenuItem item){
 
     int id=item.getItemId();
     if (id==R.id.MakeStudy){
-        Intent intent = new Intent(this, makestudy.class);
+        Intent intent = new Intent(this, MakeStudy.class);
         startActivity(intent);
         return true;
 
     }
-    if (id==R.id.classadder){
-        Intent intent = new Intent(this, classadder.class);
+    if (id==R.id.ClassAdder){
+        Intent intent = new Intent(this, ClassAdder.class);
         startActivity(intent);
         return true;
 
     }
     if (id==R.id.ClassList){
-        Intent intent = new Intent(this, classlist.class);
+        Intent intent = new Intent(this, ClassList.class);
         startActivity(intent);
         return true;
 
     }
     if (id==R.id.Logout){
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
         return true;
+
     }
     if (id == R.id.action_settings) {
         return true;
     }
     return super.onOptionsItemSelected(item);
 }
-    public void AddClasses(View view) {
+    public void addClasses(View view) {
 
         //get class name from    EditText - enterDescription
         EditText editText = (EditText) findViewById(R.id.enterDescription);
@@ -78,7 +79,7 @@ public boolean onOptionsItemSelected(MenuItem item){
 
     public void ToClassList(View view) {
 
-        Intent intent = new Intent(this, classlist.class);
+        Intent intent = new Intent(this, ClassList.class);
         startActivity(intent);
     }
     @Override

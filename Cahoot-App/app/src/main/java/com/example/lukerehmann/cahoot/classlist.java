@@ -24,7 +24,7 @@ import java.util.Map;
 
 
 
-public class classlist extends Activity {
+public class ClassList extends Activity {
 
 
     // the string variable we use for sending messages with intents
@@ -34,9 +34,9 @@ public class classlist extends Activity {
     // list items are added to a list view programatically and not through xml
     List<Map<String, String>> courselist = new ArrayList<Map<String,String>>();
 
-    public void SelectClass(View view) {
+    public void selectClass(View view) {
 
-        Intent intent = new Intent(this, classstudies.class);
+        Intent intent = new Intent(this, ClassStudies.class);
         startActivity(intent);
     }
 
@@ -44,25 +44,25 @@ public class classlist extends Activity {
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
-        if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+        if (id==R.id.ClassAdder){
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -91,22 +91,11 @@ public class classlist extends Activity {
         TextView titleitem = (TextView) findViewById(R.id.top);
         titleitem.setText(uni);
 
-        //fetch university name to be shown in the header of class list
-        /*Intent intent = getIntent);
-        String Message = intent.getStringExtra(universitySelected.EXTRA_MESSAGE);
-
-        String id = (String)parseLong(message);
-
-        TextView textview = (textview)findViewById(R.id.textview.UniversitySelect)
-        TextView.setText(classlist.get(id));*/
 
 
-        // we need to pick which view we want our context menu to respond to
-        // here, we've chosen the list of team names (which in turn applies the context menu to
-        // each list item separately)
         registerForContextMenu((ListView) findViewById(R.id.ClassListView));
 
-        // we call this initiList function to fill in our list class variable with our team names
+
         initList();
 
         // adapters are what we use to associate the list variable and its contents with the list view
@@ -140,7 +129,7 @@ public class classlist extends Activity {
     }
 
     // this method helps us minimize the amount of repeat calls we need to make in initList to place
-    // a team name into out list
+    // a course name into out list
     private HashMap<String, String> createClass(String key, String name) {
         HashMap<String, String> course = new HashMap<String, String>();
         course.put(key, name);
@@ -148,12 +137,8 @@ public class classlist extends Activity {
     }
 
 
-
-    // openTeamDetail is called whenever a list item is clicked on
-    // it calls for an intent that starts up the team detail activity and sends the team's id over
-    // to the activity with the message variable declared at the top of the activity
     public void openClassstudies(long id) {
-        Intent intent = new Intent(this, classstudies.class);
+        Intent intent = new Intent(this, ClassStudies.class);
         String message = String.valueOf(id);
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

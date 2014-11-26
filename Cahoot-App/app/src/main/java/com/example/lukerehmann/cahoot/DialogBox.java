@@ -1,7 +1,10 @@
-package com.example.dialogfragments;
+package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.app.Activity;
@@ -26,7 +29,7 @@ public void logOutDialog() {
     alertDialog.setMessage("Are you sure you want to log out");
 
     //setting positive "Yes" Button
-    alertDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener(){
+    alertDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
         public void onClick(DialogInterface dialog, int which) {
             //write code to invoke logout event and go back to the login activity
             logOut();
@@ -47,6 +50,7 @@ public void logOutDialog() {
 
 public void logOut(){
 
+<<<<<<< Updated upstream
         Toast.makeText(getApplicationContext(),"You've logged out!",Toast.LENGTH_SHORT).show();
 
         Intent intent=new Intent(this,login.class);
@@ -56,3 +60,15 @@ public void logOut(){
 
 
      */
+/*
+=======
+    Toast.makeText(getApplicationContext(),"You've logged out!",Toast.LENGTH_SHORT).show();
+
+    Intent intent=new Intent(this,login.class);
+    startActivity(intent);
+
+    finish();
+
+}
+>>>>>>> Stashed changes
+*/

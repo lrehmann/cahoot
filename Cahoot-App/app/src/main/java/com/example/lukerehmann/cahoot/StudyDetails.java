@@ -14,25 +14,25 @@ public class StudyDetails extends Activity {
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }

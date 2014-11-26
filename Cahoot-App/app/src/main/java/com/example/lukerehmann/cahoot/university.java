@@ -17,30 +17,30 @@ import android.widget.EditText;
 
 
 
-public class university extends Activity {
+public class University extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -67,7 +67,7 @@ public class university extends Activity {
         
 
 
-        Intent intent = new Intent(this, classadder.class);
+        Intent intent = new Intent(this, ClassAdder.class);
         //String message = String.valueOf(id.UniversitySelect);
         //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

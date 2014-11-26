@@ -35,8 +35,7 @@ public void loadclass(View view,classid){
  */
 
 
-
-public class classstudies extends Activity {
+public class ClassStudies extends Activity {
 
     private void initList(){
         SharedPreferences classlist = getSharedPreferences("classlist",Activity.MODE_PRIVATE);
@@ -48,6 +47,7 @@ public class classstudies extends Activity {
     }
 
     List<String> courselist = new ArrayList<String>();
+
     public void StudyDetails(View view) {
 
         Intent intent = new Intent(this, StudyDetails.class);
@@ -58,25 +58,25 @@ public class classstudies extends Activity {
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -87,7 +87,7 @@ public class classstudies extends Activity {
     }
     public void MakeStudy(View view) {
 
-        Intent intent = new Intent(this, makestudy.class);
+        Intent intent = new Intent(this, MakeStudy.class);
         startActivity(intent);
     }
 
@@ -108,7 +108,7 @@ public class classstudies extends Activity {
 
         // Get the message from the intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(classlist.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(ClassList.EXTRA_MESSAGE);
 
         int id = (int) Long.parseLong(message);
 

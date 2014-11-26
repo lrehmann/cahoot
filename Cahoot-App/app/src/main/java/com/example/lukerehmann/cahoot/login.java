@@ -8,32 +8,32 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
 
-public class login extends Activity {
+public class Login extends Activity {
 
 
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -50,7 +50,7 @@ public class login extends Activity {
         editor.putString("classarray","");
         editor.apply();
 
-        Intent intent = new Intent(this, university.class);
+        Intent intent = new Intent(this, University.class);
         startActivity(intent);
     }
 

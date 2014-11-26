@@ -13,30 +13,30 @@ import android.view.ViewGroup;
 // Joyce Sakata
 
 
-public class studycreatesuccess extends Activity {
+public class StudyCreateSuccess extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -46,9 +46,13 @@ public class studycreatesuccess extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void classstudies(View view) {
+    public void classStudies(View view) {
 
+<<<<<<< Updated upstream
         Intent intent = new Intent(this, classlist.class);
+=======
+        Intent intent = new Intent(this, ClassStudies.class);
+>>>>>>> Stashed changes
         startActivity(intent);
     }
 

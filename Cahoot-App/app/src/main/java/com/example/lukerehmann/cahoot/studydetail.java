@@ -31,30 +31,30 @@ public void checkin(){
 */
 
 
-public class studydetail extends Activity {
+public class StudyDetail extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
 
         int id=item.getItemId();
         if (id==R.id.MakeStudy){
-            Intent intent = new Intent(this, makestudy.class);
+            Intent intent = new Intent(this, MakeStudy.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.classadder){
-            Intent intent = new Intent(this, classadder.class);
+            Intent intent = new Intent(this, ClassAdder.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.ClassList){
-            Intent intent = new Intent(this, classlist.class);
+            Intent intent = new Intent(this, ClassList.class);
             startActivity(intent);
             return true;
 
         }
         if (id==R.id.Logout){
-            Intent intent = new Intent(this, login.class);
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
             return true;
         }
@@ -63,6 +63,7 @@ public class studydetail extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     public void alertButton(View view){
         new AlertDialog.Builder(this)
                 .setTitle("Success!")
@@ -103,8 +104,8 @@ public class studydetail extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_studydetail, container, false);
-            return rootView;
+            View View = inflater.inflate(R.layout.fragment_studydetail, container, false);
+            return View;
         }
     }
 }

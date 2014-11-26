@@ -7,7 +7,7 @@
         android:showAsAction="never"
         android:onClick="CreateAStudyGroup"/>
 
-    <item android:id="@+id/classadder"
+    <item android:id="@+id/ClassAdder"
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />

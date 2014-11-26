@@ -6,14 +6,16 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
 
-    <item android:id="@+id/classadder"
+    <item android:id="@+id/ClassAdder"
         android:title="Class Select"
         android:orderInCategory="1"
         android:showAsAction="never" />
+
     <item android:id ="@+id/ClassList"
         android:title="Class List"
         android:orderInCategory="1"
         android:showAsAction="never" />
+
     <item android:id ="@+id/ClassStudies"
         android:title="Class Studies"
         android:orderInCategory="2" />
@@ -22,6 +24,7 @@
         android:title="Create a Study Group"
         android:orderInCategory="3"
         android:showAsAction="never" />
+
     <item android:id ="@+id/Logout"
         android:title="Logout"
         android:orderInCategory="4"
