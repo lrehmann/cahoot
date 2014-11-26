@@ -55,7 +55,7 @@ public boolean onOptionsItemSelected(MenuItem item){
     }
     return super.onOptionsItemSelected(item);
 }
-    public void addClasses(View view) {
+    public void AddClasses(View view) {
 
         //get class name from    EditText - enterDescription
         EditText editText = (EditText) findViewById(R.id.enterDescription);

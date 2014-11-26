@@ -46,13 +46,8 @@ public class StudyCreateSuccess extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void classStudies(View view) {
-
-<<<<<<< Updated upstream
-        Intent intent = new Intent(this, classlist.class);
-=======
-        Intent intent = new Intent(this, ClassStudies.class);
->>>>>>> Stashed changes
+    public void ClassStudies(View view) {
+        Intent intent = new Intent(this, ClassList.class);
         startActivity(intent);
     }
 

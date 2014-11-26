@@ -27,7 +27,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".login"
+            android:name=".Login"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,31 +36,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".university"
+            android:name=".University"
             android:label="@string/title_activity_university" >
         </activity>
         <activity
-            android:name=".classadder"
+            android:name=".ClassAdder"
             android:label="@string/title_activity_classadder" >
         </activity>
         <activity
-            android:name=".classlist"
+            android:name=".ClassList"
             android:label="@string/title_activity_classlist" >
         </activity>
         <activity
-            android:name=".studydetail"
+            android:name=".StudyDetail"
             android:label="@string/title_activity_studydetail" >
         </activity>
         <activity
-            android:name=".classstudies"
+            android:name=".ClassStudies"
             android:label="@string/title_activity_classstudies" >
         </activity>
         <activity
-            android:name=".createstudy"
+            android:name=".CreateStudy"
             android:label="@string/title_activity_createstudy" >
         </activity>
         <activity
-            android:name=".studycreatesuccess"
+            android:name=".StudyCreateSuccess"
             android:label="@string/title_activity_studycreatesuccess" >
         </activity>
 
@@ -72,7 +72,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".makestudy"
+            android:name=".MakeStudy"
             android:label="@string/title_activity_makestudy" >
         </activity>
         <activity

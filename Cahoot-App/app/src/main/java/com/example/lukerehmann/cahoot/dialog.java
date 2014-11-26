@@ -10,10 +10,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class Dialog extends DialogFragment {
+
+/*
+public class DialogBox extends DialogFragment {
 
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    public void onCreateDialog(Bundle savedInstanceState) {
 
         OnClickListener positiveClick = new OnClickListener() {
             @Override
@@ -40,3 +42,5 @@ public class Dialog extends DialogFragment {
     }
 
 }
+
+*/
