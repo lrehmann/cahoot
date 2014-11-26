@@ -27,7 +27,7 @@
 
 <!--Studylist Button-->
     <Button
-        android:text="Back To All Study Groups"
+        android:text="Back To Classes"
         android:onClick="classstudies"
         android:id="@+id/studyList"
         style="@style/buttonStyle"

@@ -48,7 +48,7 @@ public class studycreatesuccess extends Activity {
 
     public void classstudies(View view) {
 
-        Intent intent = new Intent(this, classstudies.class);
+        Intent intent = new Intent(this, classlist.class);
         startActivity(intent);
     }
 
