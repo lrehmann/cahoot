@@ -33,6 +33,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/ClassListView"
         android:cacheColorHint="#FFDAFF7F"
+        style="@style/Theme.Override"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         >
 
     </ListView>

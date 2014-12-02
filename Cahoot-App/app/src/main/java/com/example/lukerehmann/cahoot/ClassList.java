@@ -10,11 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,6 +25,7 @@ import java.util.Map;
 
 
 public class ClassList extends Activity {
+
 
 
     // the string variable we use for sending messages with intents
@@ -74,6 +75,8 @@ public class ClassList extends Activity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,6 +105,7 @@ public class ClassList extends Activity {
         ListView courselistView = (ListView) findViewById(R.id.ClassListView);
         SimpleAdapter simpleAdpt = new SimpleAdapter(this, courselist, android.R.layout.simple_list_item_1, new String[] {"course"}, new int[] {android.R.id.text1});
         courselistView.setAdapter(simpleAdpt);
+
 
         // setOnItemClickListener tells the activity what to do when a list item is clicked on
         courselistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -150,6 +154,8 @@ public class ClassList extends Activity {
         getMenuInflater().inflate(R.menu.classlist, menu);
         return true;
     }
+
+
 /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -192,6 +198,8 @@ public class ClassList extends Activity {
             return rootView;
         }
     }
+
+
 
 
 
