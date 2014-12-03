@@ -14,7 +14,7 @@
         android:layout_height="65dp"
         android:text="Create a Study Group"
         android:id="@+id/createStudyGroup"
-    android:onClick="studycreatesuccess"
+        android:onClick="alertButton"
         style="@style/buttonStyle"
 
     android:layout_alignParentBottom="true"

@@ -1,13 +1,14 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.format.Time;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.text.format.Time;
 
 // Joyce Sakata
 
@@ -57,11 +58,21 @@ public class MakeStudy extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void studycreatesuccess(View view) {
 
-        Intent intent = new Intent(this, StudyCreateSuccess.class);
-        startActivity(intent);
+    public void alertButton(View view){
+        new AlertDialog.Builder(this)
+                .setTitle("Success!")
+                .setMessage("You Successfully Created a Study Group")
+                .setNeutralButton("OK", null)
+                .show();
     }
+
+
+   // public void studycreatesuccess(View view) {
+
+     //   Intent intent = new Intent(this, StudyCreateSuccess.class);
+       // startActivity(intent);
+   // }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

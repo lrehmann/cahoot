@@ -38,14 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter Name of Unversity"
+        android:text="Find Study Groups Near You"
         android:id="@+id/UniversitySelect"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="150dp"
-        android:textSize="20dp"
+        android:textSize="25dp"
         style="@style/textStyle"
         />
 
@@ -59,7 +59,7 @@
         android:textColor="#999999"
         android:autoText="true"
         android:paddingLeft="10dp"
-        android:hint="University Name"
+        android:hint="Enter University Name"
         style="@style/textInput"
 
         android:layout_alignParentRight="true"
@@ -75,18 +75,6 @@
         android:onClick="UniversitySelected"
         style="@style/buttonStyle"
         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Find Study Groups Near You!"
-        android:id="@+id/textView"
-        android:textSize="27dp"
-        android:layout_alignBottom="@+id/UniversitySelect"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp" />
 
 
 </RelativeLayout>
