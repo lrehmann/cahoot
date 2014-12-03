@@ -14,12 +14,12 @@
         android:layout_height="65dp"
         android:text="Create a Study Group"
         android:id="@+id/createStudyGroup"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="studycreatesuccess"
+    android:onClick="studycreatesuccess"
         style="@style/buttonStyle"
 
-    />
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -116,7 +116,10 @@
         android:layout_below="@+id/enterClassHeader"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        style="@style/textInput"/>
+        android:background="#6d75a4"
+        android:textColor="#000000"
+
+        />
 
     <Button
         android:layout_width="140dp"

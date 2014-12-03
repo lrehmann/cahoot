@@ -1,26 +1,26 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
-import android.view.MenuInflater;
 import android.widget.EditText;
-import android.widget.TextView;
 
 
 // Mingjue Ni - Class Addition Page (select your classes)
 
 
+
 public class ClassAdder extends Activity {
+
+
 
 //public class classadder extends ActionBarActivity {}
 public boolean onOptionsItemSelected(MenuItem item){
@@ -94,6 +94,7 @@ public boolean onOptionsItemSelected(MenuItem item){
     }
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -122,4 +123,6 @@ public boolean onOptionsItemSelected(MenuItem item){
             return rootView;
         }
     }
+
+
 }

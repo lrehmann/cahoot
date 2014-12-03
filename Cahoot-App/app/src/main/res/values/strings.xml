@@ -5,14 +5,14 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="teststring">This is a string</string>
-    <string name="title_activity_classadder">classadder</string>
-    <string name="title_activity_classlist">classlist</string>
-    <string name="title_activity_studydetail">studydetail</string>
-    <string name="title_activity_classstudies">classstudies</string>
-    <string name="title_activity_createstudy">createstudy</string>
-    <string name="title_activity_studycreatesuccess">studycreatesuccess</string>
-    <string name="title_activity_university">university</string>
-    <string name="title_activity_makestudy">makestudy</string>
+    <string name="title_activity_classadder">Add a Class</string>
+    <string name="title_activity_classlist">Your Classes</string>
+    <string name="title_activity_studydetail">Study Group Details</string>
+    <string name="title_activity_classstudies">Study Groups</string>
+    <string name="title_activity_createstudy">Create a Study Group</string>
+    <string name="title_activity_studycreatesuccess">Success!</string>
+    <string name="title_activity_university">Select a University</string>
+    <string name="title_activity_makestudy">Make a Study Group</string>
 
     <string-array name="classes">
         <item>SI543: Programming 1 (Java) </item>
@@ -21,7 +21,7 @@
     </string-array>
 
     <string name="title_activity_course_studies">CourseStudies</string>
-    <string name="title_activity_study_details">StudyDetails</string>
+    <string name="title_activity_study_details">Study Group Details</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
