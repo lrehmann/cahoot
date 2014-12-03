@@ -2,6 +2,7 @@ package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -68,6 +69,12 @@ public boolean onOptionsItemSelected(MenuItem item){
         editor.putString("classarray",allclasses+';'+thisclass);
         editor.apply();
 
+        //Alert that the class has been added
+        new AlertDialog.Builder(this)
+                .setTitle("Class Added!")
+                .setMessage(thisclass)
+                .setNeutralButton("OK", null)
+                .show();
 
         //empty out the box for adding another class
         EditText enterclass = (EditText) findViewById(R.id.enterDescription);
