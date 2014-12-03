@@ -1,11 +1,8 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
-<<<<<<< HEAD
-=======
 import android.app.ActionBar;
 import android.app.AlertDialog;
->>>>>>> FETCH_HEAD
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
