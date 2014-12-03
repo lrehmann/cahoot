@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/top"
-        android:text="SI 543 - HW Assignment #3"
+        android:text="HW Assignment #3"
         android:layout_width="wrap_content"
         android:textSize="20dp"
         android:textColor="#ffffff"
@@ -81,7 +81,7 @@
     <TextView
         android:id="@+id/comments"
         android:textSize="16dp"
-        android:text="I will be working on the java homework assignment. I will be sitting near the fireplace"
+        android:text="I will be working on this week's homework assignment. I will be sitting near the fireplace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"

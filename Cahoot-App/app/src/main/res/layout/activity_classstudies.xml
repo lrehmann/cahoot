@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/class1"
-        android:text="Java HW at Starbucks"
+        android:text=" HW at Starbucks"
         android:layout_width="fill_parent"
         android:layout_height="150px"
 
@@ -53,7 +53,7 @@
 
     <Button
         android:id="@+id/class2"
-        android:text="Intents at Sweetwaters"
+        android:text="Midterm at Sweetwaters"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:onClick="StudyDetails"
@@ -66,7 +66,7 @@
         />
     <Button
         android:id="@+id/class3"
-        android:text="GPS and maps at Comet"
+        android:text="Midterm at Comet Coffee"
         android:layout_width="fill_parent"
         android:layout_height="150px"
         android:textSize="25sp"

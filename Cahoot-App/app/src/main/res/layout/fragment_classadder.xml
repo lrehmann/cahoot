@@ -35,7 +35,7 @@
             style="@style/textInput"
             android:autoText="true"
             android:paddingLeft="8dp"
-            android:hint="Enter Class Name"
+            android:hint="eg. SI 543"
             android:textColor="#999999"
             />
         <Button
@@ -60,7 +60,6 @@
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
 
 
 </RelativeLayout>
