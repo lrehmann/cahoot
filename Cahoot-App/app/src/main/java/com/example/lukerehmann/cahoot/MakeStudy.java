@@ -58,13 +58,16 @@ public class MakeStudy extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public final static String alertstatus = "com.example.lukerehmann.cahoot.alertstatus";
 
     public void alertButton(View view){
-        new AlertDialog.Builder(this)
-                .setTitle("Success!")
-                .setMessage("You Successfully Created a Study Group")
-                .setNeutralButton("OK", null)
-                .show();
+        Intent intent = new Intent(this, ClassList.class);
+
+        String message = String.valueOf("1");
+        intent.putExtra(alertstatus, message);
+
+        startActivity(intent);
+
     }
 
 

@@ -1,6 +1,7 @@
 package com.example.lukerehmann.cahoot;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -30,6 +31,7 @@ public class ClassList extends Activity {
 
     // the string variable we use for sending messages with intents
     public final static String EXTRA_MESSAGE = "com.example.lukerehmann.cahoot.MESSAGE";
+    public final static String alertstatus = "com.example.lukerehmann.cahoot.alertstatus";
 
     // a list class type must be used when using a list view
     // list items are added to a list view programatically and not through xml
@@ -87,6 +89,16 @@ public class ClassList extends Activity {
                     .commit();
         }
 
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(ClassList.alertstatus);
+
+        if (message.length()>0) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Success!")
+                    .setMessage("You Successfully Created a Study Group")
+                    .setNeutralButton("OK", null)
+                    .show();
+        }
 
         SharedPreferences storeduniversity = getSharedPreferences("universityfile",Activity.MODE_PRIVATE);
         String uni=storeduniversity.getString("university", "Select a University");

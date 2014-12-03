@@ -84,10 +84,12 @@ public boolean onOptionsItemSelected(MenuItem item){
     }
 
 
+    public final static String alertstatus = "com.example.lukerehmann.cahoot.alertstatus";
 
     public void ToClassList(View view) {
 
         Intent intent = new Intent(this, ClassList.class);
+        intent.putExtra(alertstatus, "");
         startActivity(intent);
     }
     @Override
