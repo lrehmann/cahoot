@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
+import android.widget.Button;
 
 public class StudyDetails extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
@@ -42,6 +42,16 @@ public class StudyDetails extends Activity {
         return super.onOptionsItemSelected(item);
     }
     public void alertButton(View view){
+        /*
+        Button
+
+        android:id="@+id/attend"
+        android:text="Check in"
+        */
+        final Button attendbutton = (Button) findViewById(R.id.attend);
+        attendbutton.setText("Checked In!");
+        attendbutton.setEnabled(false);
+
         new AlertDialog.Builder(this)
                 .setTitle("Success!")
                 .setMessage("You Successfully Checked In!")
